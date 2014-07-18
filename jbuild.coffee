@@ -7,6 +7,8 @@
 #    windows:        npm -g install jbuild
 #-------------------------------------------------------------------------------
 
+ports = require("ports")
+
 #-------------------------------------------------------------------------------
 tasks = defineTasks exports,
   watch: "watch for source file changes, then run build, test and server"
@@ -42,7 +44,9 @@ tasks.watch = ->
 tasks.serve = ->
   log "running agent and server"
 
-  command = "bin/possum-agent --verbose"
+  possumServerPort = ports.getPort("possum-server")
+
+  command = "bin/possum-agent --verbose http://localhost:#{possumServerPort}"
   server.start "tmp/agent.pid", "node", command.split " "
 
   command = "bin/possum-server --verbose"

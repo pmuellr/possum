@@ -1,6 +1,22 @@
 %PROGRAM% - %DESCRIPTION%
 
-This program is an agent.
+This program will scan for v8 debug ports that are open, connect to them,
+and then connect to a possum-server via WebSocket, for use there.
+
+usage:
+
+  %PROGRAM% [opts] url
+
+url is a Websocket URL the agent will connect to
+
+where opts:
+
+    -k --key           the key to send when connecting to the websocket
+    -8 --v8port        which port to scan for the v8 debugger
+    -v --verbose       generate verbose messages
+    -h --help          print this help
+
+By default, no key is sent, and the --v8port is 5858.
 
 homepage: %HOMEPAGE%
 version:  %VERSION%
