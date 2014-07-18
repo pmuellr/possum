@@ -1,0 +1,28 @@
+{
+  "name":               "possum",
+  "description":        "debug tools",
+  "main":               "./lib/possum",
+  "bin": {
+    "possum-agent":     "bin/possum-agent.js",
+    "possum-server":    "bin/possum-server.js"
+  },
+  "version":            "0.1.0",
+  "author":             "pmuellr",
+  "license":            "Apache-2.0",
+  "homepage":           "https://github.com/pmuellr/possum",
+  "repository": {
+    "type":             "git",
+    "url":              "https://github.com/pmuellr/possum.git"
+  },
+  "dependencies": {
+    "express":          "4.6.x",
+    "nopt":             "1.0.x",
+    "ports":            "1.1.x",
+    "q":                "1.0.x",
+    "underscore":       "1.6.x"
+  },
+  "devDependencies": {
+    "mocha":            "1.19.x",
+    "expect.js":        "0.3.x"
+  }
+}

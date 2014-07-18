@@ -1,0 +1,6 @@
+%PROGRAM% - %DESCRIPTION%
+
+This program is an agent.
+
+homepage: %HOMEPAGE%
+version:  %VERSION%

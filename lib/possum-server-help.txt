@@ -1,0 +1,6 @@
+%PROGRAM% - %DESCRIPTION%
+
+This program is an server.
+
+homepage: %HOMEPAGE%
+version:  %VERSION%
