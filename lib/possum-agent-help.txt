@@ -5,18 +5,22 @@ and then connect to a possum-server via WebSocket, for use there.
 
 usage:
 
-  %PROGRAM% [opts] url
+  %PROGRAM% [opts] possumServerURL
 
-url is a Websocket URL the agent will connect to
+`possumServerURL` is a Websocket URL to a possum server that the agent will
+connect to
 
 where opts:
 
-    -k --key           the key to send when connecting to the websocket
-    -8 --v8port        which port to scan for the v8 debugger
-    -v --verbose       generate verbose messages
-    -h --help          print this help
+    -k --key [string]       the key to send when connecting to the websocket
+    -8 --v8port [number]    which port to scan for the v8 debugger
+    -v --verbose            generate verbose messages
+    -h --help               print this help
 
 By default, no key is sent, and the --v8port is 5858.
+
+The --v8port option may be specified as a range.  Eg, --v8port 5858-5860 will
+scan ports 5858, 5859, and 5860.
 
 homepage: %HOMEPAGE%
 version:  %VERSION%

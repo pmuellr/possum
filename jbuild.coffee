@@ -49,7 +49,7 @@ tasks.serve = ->
   command = "bin/possum-agent --verbose http://localhost:#{possumServerPort}"
   server.start "tmp/agent.pid", "node", command.split " "
 
-  command = "bin/possum-server --verbose"
+  command = "--debug bin/possum-server --verbose"
   server.start "tmp/server.pid", "node", command.split " "
 
 #-------------------------------------------------------------------------------
