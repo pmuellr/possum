@@ -1,0 +1,12 @@
+{
+  "name": "tools",
+  "version": "0.0.0",
+  "description": "dev tools",
+  "main": "index",
+  "dependencies": {
+    "coffee-script": "^1.7.1",
+    "shelljs": "^0.3.0",
+    "underscore": "^1.6.0",
+    "minimatch": "^1.0.0"
+  }
+}
