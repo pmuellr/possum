@@ -19,8 +19,5 @@ where opts:
 
 By default, no key is sent, and the --v8port is 5858.
 
-The --v8port option may be specified as a range.  Eg, --v8port 5858-5860 will
-scan ports 5858, 5859, and 5860.
-
 homepage: %HOMEPAGE%
 version:  %VERSION%
